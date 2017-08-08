@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Служба по ИТ, АО "КОНАР"</title>
+  <title>Доступ запрещён</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- shortcut::src/img/favicon.ico -->
@@ -14,24 +14,30 @@
 <body>
   <div class="container">
     <p class="text-center">
-      <img src="img/logo.gif" class="img-fluid" alt="АО КОНАР" />
+      <img src="http://403.konar.ru/img/logo.gif" class="img-fluid" alt="АО КОНАР" />
     </p>
     <hr/>
     <div class="row">
       <div class="col-md-2">
         <p class="text-center">
-          <img src="img/man.jpg" class="img-fluid" alt="Warning" />
+          <img src="http://403.konar.ru/img/man.jpg" class="img-fluid" alt="Warning" />
         </p>
       </div>
       <div class="col-md-10">
-        <p>К сожалению, Вам не разрешено подключение к локальной сети ПГ КОНАР.</p>
-        <p>Это могло произойти по следующим причинам:</p>
+        <p>К сожалению, вам запрещён доступ к сайтам категории &laquo;%g&raquo;.</p>
+        <p>
+          Если вам нужен доступ для выполнения служебных обязанностей,
+          обратитесь с службу технической поддержки по телефону +7 (351) 216-81-11 или по электронной почте <a href="mailto:support@konar.ru">support@konar.ru</a>.
+        </p>
+        <p>В заявке укажите обоснование необходимости доступа и следующую служебную информацию:</p>
         <ul>
-          <li>в текущем местоположении вашему компьютеру или учетной записи запрещено подключаться к сети;</li>
-          <li>подключенный к сети компьютер не является корпоративным;</li>
-          <li>в работе сети в настоящий момент имеются проблемы.</li>
+          <li>Имя пользователя: %D</li>
+          <li>IP-адрес источника: %d</li>
+          <li>URL-адрес: %M %U</li>
+          <li>Категория: %g</li>
+          <li>Причина: %B</li>
         </ul>
-        <p>Вы можете обратиться в техническую поддержку по телефону <em>+7 (351) 216-81-11</em></p>
+        <p>С уважением, Служба по ИТ АО &laquo;КОНАР&raquo;.</p>
       </div>
     </div>
     <hr/>

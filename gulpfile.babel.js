@@ -1,6 +1,5 @@
 import gulp from 'gulp';
 import base64favicon from 'gulp-base64-favicon';
-import inlineimg from 'gulp-inline-image-html';
 import concatCss from 'gulp-concat-css';
 import uncss from 'gulp-uncss';
 import cssmin from 'gulp-cssmin';
@@ -26,7 +25,6 @@ gulp.task('build:css', () => {
 gulp.task('build:html', () => {
   return gulp.src('./src/index.html')
     .pipe(base64favicon())
-    .pipe(inlineimg('src'))
     .pipe(deleteLines({
       'filters': [
         /<link\s+rel=["']/i
